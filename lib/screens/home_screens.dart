@@ -92,6 +92,10 @@ class HomeScreen extends StatelessWidget {
                             ),
                           ),
                           const Gap(20),
+                          ElevatedButton(
+                            onPressed: () {},
+                            child: const DisplayWhiteText(text: 'Add New Task'),
+                          )
                         ],
                       ),
                     ),
