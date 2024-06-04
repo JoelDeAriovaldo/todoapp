@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todoapp/config/config.dart';
 import 'package:todoapp/screens/screens.dart';
 
 class TodoApp extends StatelessWidget {
@@ -6,9 +7,10 @@ class TodoApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
+      theme: AppTheme.light,
+      home: const HomeScreen(),
     );
   }
 }
